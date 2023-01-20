@@ -9,7 +9,7 @@ import {
   BiLinkExternal,
   BiShow,
   BiPlay,
-  BiPause
+  BiPause,
 } from "react-icons/bi";
 
 export const APP_ICONS = {
@@ -23,11 +23,20 @@ export const APP_ICONS = {
   SHARE: <BiLinkExternal />,
   EYE: <BiShow />,
   PLAY: <BiPlay />,
-  PAUSE: <BiPause />
+  PAUSE: <BiPause />,
 };
 
 export const APP_PAGES = {
   APP: {
-    HOME: "HOME"
-  }
+    HOME: "HOME",
+  },
 };
+
+export const DISCOVER = [
+  {
+    id: 1,
+    title: "Shawn Mednes - Treats You Better",
+    views: "1854691298",
+    img: "https://www.creativeboom.com/uploads/articles/db/db1a6b372e7c23636f9b8d88f879a9a815c6825c_810.jpeg",
+  },
+];
