@@ -313,3 +313,10 @@ h2.card_header {
   height: 100%;
   background-color: #1a1936;
 }
+.music_bottom_nav_container {
+  position: fixed;
+  bottom: 0;
+  background-color: red;
+  padding:20px 0px;
+  width: 100%;
+}

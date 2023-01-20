@@ -59,7 +59,7 @@ export const VideoCard = () => {
   }, 1000);
 
   if (progress.length === "100%") {
-    setPlaying(false);
+    setPlaying(true);
   }
 
   return (

@@ -2,6 +2,7 @@ import React from "react";
 import { Card } from "../Components/Cards/Card";
 import { VideoCard } from "../Components/Cards/VideoCard";
 import { Jumbotron } from "../Components/Jumbotron";
+import { MusicBottomNav } from "../Components/Nav/MusicBottomNav";
 import { Nav } from "../Components/Nav/Nav";
 import { APP_ICONS, DISCOVER, TRENDING } from "../context/settings";
 import illustration from "../Images/anshita-nair-0rxLLHD1XxA-unsplash.jpg";
@@ -45,6 +46,8 @@ export const HomeScreen = () => {
           </div>
         </div>
       </div>
+
+      <MusicBottomNav />
     </div>
   );
 };
