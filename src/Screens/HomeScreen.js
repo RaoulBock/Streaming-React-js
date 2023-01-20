@@ -1,5 +1,6 @@
 import React from "react";
 import { Card } from "../Components/Cards/Card";
+import { CurrentSongCard } from "../Components/Cards/CurrentSongCard";
 import { VideoCard } from "../Components/Cards/VideoCard";
 import { Jumbotron } from "../Components/Jumbotron";
 import { MusicBottomNav } from "../Components/Nav/MusicBottomNav";
@@ -11,6 +12,7 @@ export const HomeScreen = () => {
   return (
     <div className="container">
       <Nav />
+      <CurrentSongCard />
       <div className="container_header">
         <div className="gradient"></div>
         <img
