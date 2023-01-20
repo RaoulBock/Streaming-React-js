@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
+.main_container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.sidenav_outline {
+  width: 15%;
+  height: 100%;
+  background-color: #1a1936;
+  position: fixed;
+}
+.screen_container {
+  width: 85%;
+  
+  position: absolute;
+  right: 0;
+  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.363));
+}
+.logo {
+  width: 100%;
+  position: absolute;
+  top: -13%;
+}
+.menulist_outline, .menulist_active {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* justify-content: center; */
+  margin-left: 10px;
+  margin-right: 10px;
+  margin: 10px;
+  padding: 10px 10px;
+}
+.menulist_active {
+  background-color: #ff3465;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 30px;
+}
+.menulist_active h4 {
+  color: white;
+  font-weight: 400;
+  display: flex;
+  font-size: 16px;
+  cursor: pointer;
+}
+.menulist_outline h4 {
+  color: #797a8e;
+  font-weight: 400;
+  display: flex;
+  font-size: 16px;
+  cursor: pointer;
+}
+.side-menu-container {
+  position: relative;
+  top: 68px;
+}
+.menu_list_title {
+  color: #a6a7b4;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 20px 20px
+}
+.illustration_image {
+  width: 100%;
+  height: 500px;
+}
+.gradient {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(to bottom, rgba(44, 62, 80,1.0), rgb(255, 255, 255));
+  opacity: 0.8;
+  position:absolute
+}
+.search_input_container {
+  background-color: #828a91;
+  width: 500px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+.nav_container {
+  position: absolute;
+  background-color: transparent;
+  padding: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 96.3%;
+  z-index: 999;
+}
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  background-color: #828a91;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  outline: none;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.search_input_container h4 {
+  padding-left: 15px;
+  color: white;
+  display: flex;
+}
+.search-input::placeholder {
+  color: white;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  padding: 7px 15px;
+  border-radius: 7px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.btn:hover {
+  opacity: 1;
+}
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid #eee;
+  color: white;
+}
+.nav_container_grid {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.nav_container_grid h4 {
+  color: white;
+  font-weight: 500;
+  font-size: 25px;
+  cursor: pointer;
+}
+.profile_picture_image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+.jumbotron_container {
+  position: relative;
+  left: 31px;
+  width: 500px;
+  top: -382px;
+}
+.jumbotron_container h1 {
+  margin-bottom: 30px;
+  line-height: 30px;
+  margin-top: 10px;
+  color: #1a1936;
+}
+.jumbotron_container h5 {
+  width: 300px;
+  color: rgb(26 25 54);
+  font-weight: 400;
+}
+.jumbotron_container h4 {
+  color: rgb(26 25 54);
+  font-weight: 400;
+}
+.user_card_image {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+.user_card_outline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.user_card_outline {
+  margin-top: 15px;
+}
+.user_card_outline h5 {
+  font-size: 10px;
+}
+.user_card_outline h4 {
+  font-size: 14px;
+    font-weight: 500;
+    color: #1a1936;
+}
+.social_button_card_outline {
+  display: flex;
+  align-items: center;
+  border: 1px solid #828a91;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+  gap: 7px;
+}
+.social_button_card h4 {
+  display: flex;
+}
+.social_button_card {
+  display: flex;
+  gap: 10px;
+}
+.video {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Controls */
+.video_player_container {
+  height: 500px;
+  width: 100%;
+}
+.play_btn {
+  /* background: red; */
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    cursor: pointer;
+    font-size: 58px;
+    color: white;
+}
+
