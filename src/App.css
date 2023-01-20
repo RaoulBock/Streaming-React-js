@@ -235,4 +235,34 @@
     font-size: 58px;
     color: white;
 }
+.card_outline_image {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+.section_one {
+  position: relative;
+  top: -244px;
+  padding: 0px 20px;
+}
+.card_outline {
+  margin-top: 25px;
+}
+h2.card_header {
+  font-size: 32px;
+  font-weight: 500;
+  color: #1a1936;
+}
+.card_grid {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 
+}
+.card_grid h2 {
+  display: flex;
+  align-items: center;
+  
+}
