@@ -1,9 +1,12 @@
 import React from "react";
+import { AppContext } from "../../context/AppContext";
 
 export const Card = ({ item, header }) => {
+  const { currentSongPlaying, setCurrentSongPlaying } =
+    React.useContext(AppContext);
   return (
     <>
-      <div className="card_outline">
+      <div className="card_outline" onClick={() => setCurrentSongPlaying(item)}>
         <h4 className="card_time_length">{item.time_length}</h4>
         <img src={item.img} alt={item.name} className={"card_outline_image"} />
         <h4>{item.title}</h4>

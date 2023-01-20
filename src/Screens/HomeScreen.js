@@ -5,14 +5,16 @@ import { VideoCard } from "../Components/Cards/VideoCard";
 import { Jumbotron } from "../Components/Jumbotron";
 import { MusicBottomNav } from "../Components/Nav/MusicBottomNav";
 import { Nav } from "../Components/Nav/Nav";
+import { AppContext } from "../context/AppContext";
 import { APP_ICONS, DISCOVER, TRENDING } from "../context/settings";
 import illustration from "../Images/anshita-nair-0rxLLHD1XxA-unsplash.jpg";
 
 export const HomeScreen = () => {
+  const { currentSongPlaying } = React.useContext(AppContext);
   return (
     <div className="container">
       <Nav />
-      <CurrentSongCard />
+      {currentSongPlaying && <CurrentSongCard />}
       <div className="container_header">
         <div className="gradient"></div>
         <img
