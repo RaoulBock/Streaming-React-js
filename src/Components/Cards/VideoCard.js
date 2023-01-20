@@ -2,7 +2,7 @@ import React from "react";
 import pause from "../../Images/pause.svg";
 import play from "../../Images/play.svg";
 import forward from "../../Images/forward-5.svg";
-import videoPlayMe from "../Video/Lancewood B2B Portal - Google Chrome 2022-02-18 09-24-03.mp4";
+import videoPlayMe from "../Video/Do_Better_(getmp3.pro).mp3";
 import { APP_ICONS } from "../../context/settings";
 
 export const VideoCard = () => {
@@ -55,7 +55,7 @@ export const VideoCard = () => {
     <div className="video_card_container">
       <video ref={videoRef} id="video1" className="video_player_container">
         {/* Add your video source here */}
-        <source src={videoPlayMe} type={"video/mp4"} />
+        <source src={videoPlayMe} type={"video/mp3"} />
       </video>
       {/* <button onClick={() => videoHandler("play")}>Play</button> */}
       {playing ? (
