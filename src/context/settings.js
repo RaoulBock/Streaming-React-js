@@ -10,6 +10,7 @@ import {
   BiShow,
   BiPlay,
   BiPause,
+  BiListUl,
 } from "react-icons/bi";
 
 export const APP_ICONS = {
@@ -24,6 +25,7 @@ export const APP_ICONS = {
   EYE: <BiShow />,
   PLAY: <BiPlay />,
   PAUSE: <BiPause />,
+  PLAYLIST: <BiListUl />,
 };
 
 export const APP_PAGES = {

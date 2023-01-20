@@ -49,6 +49,27 @@ export const SideNav = () => {
     },
   ];
 
+  const side_menu_option_two = [
+    {
+      id: 6,
+      name: "Jcole",
+      icon: APP_ICONS.PLAYLIST,
+      onClick: () => setSideTab(6),
+    },
+    {
+      id: 7,
+      name: "Good Vibes",
+      icon: APP_ICONS.PLAYLIST,
+      onClick: () => setSideTab(7),
+    },
+    {
+      id: 8,
+      name: "Oldies",
+      icon: APP_ICONS.PLAYLIST,
+      onClick: () => setSideTab(8),
+    },
+  ];
+
   return (
     <div className="sidenav_outline">
       <img src={logo} alt={logo} className={"logo"} />
@@ -59,6 +80,10 @@ export const SideNav = () => {
         })}
         <h3 className="menu_list_title">Your Videos</h3>
         {side_menu_option_one.map((e, i) => {
+          return <MenuList item={e} key={i} />;
+        })}
+        <h3 className="menu_list_title">My Playlist</h3>
+        {side_menu_option_two.map((e, i) => {
           return <MenuList item={e} key={i} />;
         })}
       </div>
