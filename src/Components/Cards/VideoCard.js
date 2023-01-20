@@ -53,10 +53,10 @@ export const VideoCard = () => {
 
   return (
     <div className="video_card_container">
-      <video ref={videoRef} id="video1" className="video_player_container">
+      <audio ref={videoRef} id="video1" className="video_player_container">
         {/* Add your video source here */}
-        <source src={videoPlayMe} type={"video/mp3"} />
-      </video>
+        <source src={videoPlayMe} type={"audio/mp3"} />
+      </audio>
       {/* <button onClick={() => videoHandler("play")}>Play</button> */}
       {playing ? (
         <div onClick={() => videoHandler("pause")}>

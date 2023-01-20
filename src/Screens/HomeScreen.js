@@ -12,11 +12,11 @@ export const HomeScreen = () => {
       <Nav />
       <div className="container_header">
         <div className="gradient"></div>
-        {/* <img
-        src={illustration}
-        alt={"illustration"}
-        className={"illustration_image"}
-      /> */}
+        <img
+          src={illustration}
+          alt={"illustration"}
+          className={"illustration_image"}
+        />
         <VideoCard />
         <Jumbotron
           title={"VIDEO OF THE DAY"}
