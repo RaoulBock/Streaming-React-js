@@ -6,10 +6,8 @@ import videoPlayMe from "../Video/Do_Better_(getmp3.pro).mp3";
 import { APP_ICONS } from "../../context/settings";
 
 export const VideoCard = () => {
-  // const videoRef = React.useRef(null);
-  // const [playing, setPlaying] = React.useState(false);
   const [currentTime, setCurrentTime] = React.useState(0);
-  // const [videoTime, setVideoTime] = React.useState(0);
+
   const [progress, setProgress] = React.useState(0);
   const videoRef = React.useRef(null);
   const [playing, setPlaying] = React.useState(false);
@@ -32,18 +30,6 @@ export const VideoCard = () => {
       setPlaying(false);
     }
   };
-
-  // const videoHandler = (control) => {
-  //   if (control === "play") {
-  //     videoRef.current.play();
-  //     setPlaying(true);
-  //     var vid = document.getElementById("video1");
-  //     setVideoTime(vid.duration);
-  //   } else if (control === "pause") {
-  //     videoRef.current.pause();
-  //     setPlaying(false);
-  //   }
-  // };
 
   const fastForward = () => {
     videoRef.current.currentTime += 5;

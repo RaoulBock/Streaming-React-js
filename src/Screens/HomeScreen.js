@@ -47,7 +47,7 @@ export const HomeScreen = () => {
         </div>
       </div>
 
-      <MusicBottomNav />
+      {/* <MusicBottomNav /> */}
     </div>
   );
 };

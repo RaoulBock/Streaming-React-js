@@ -226,7 +226,7 @@
 }
 .play_btn {
   position: absolute;
-  top: 22%;
+  top: 237px;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9999;
@@ -316,7 +316,25 @@ h2.card_header {
 .music_bottom_nav_container {
   position: fixed;
   bottom: 0;
-  background-color: red;
-  padding:20px 0px;
+  background-color: #eee;
+  padding: 8px 0px;
   width: 100%;
+  border-top: 1px solid #e1e1e1;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 20px;
+}
+.progress-nav-bar {
+  height: 10px;
+  background-color: rgb(247, 0, 0);
+  overflow: hidden;
+  width: 1000px;
+}
+.progress-nav-bar::before {
+  content: "";
+  display: block;
+  height: 100%;
+  background-color: #1a1936;
+  border-radius: 10px;
 }
