@@ -8,12 +8,19 @@ import { APP_ICONS } from "../../context/settings";
 export const VideoCard = () => {
   // const videoRef = React.useRef(null);
   // const [playing, setPlaying] = React.useState(false);
-  // const [currentTime, setCurrentTime] = React.useState(0);
+  const [currentTime, setCurrentTime] = React.useState(0);
   // const [videoTime, setVideoTime] = React.useState(0);
   const [progress, setProgress] = React.useState(0);
   const videoRef = React.useRef(null);
   const [playing, setPlaying] = React.useState(false);
   const [videoTime, setVideoTime] = React.useState(0);
+
+  React.useEffect(() => {
+    const intervalId = setInterval(() => {
+      setProgress((videoRef.current?.currentTime / videoTime) * 100);
+    }, 1000);
+    return () => clearInterval(intervalId);
+  }, []);
 
   const videoHandler = (control) => {
     if (control === "play") {
@@ -46,10 +53,14 @@ export const VideoCard = () => {
     videoRef.current.currentTime -= 5;
   };
 
-  // window.setInterval(function () {
-  //   setCurrentTime(videoRef.current?.currentTime);
-  //   setProgress((videoRef.current?.currentTime / videoTime) * 100);
-  // }, 1000);
+  window.setInterval(function () {
+    setCurrentTime(videoRef.current?.currentTime);
+    setProgress((videoRef.current?.currentTime / videoTime) * 100);
+  }, 1000);
+
+  if (videoTime > videoTime.length) {
+    setPlaying(false);
+  }
 
   return (
     <div className="video_card_container">
@@ -72,6 +83,7 @@ export const VideoCard = () => {
       {/* <button onClick={() => videoHandler("pause")}>Pause</button> */}
       {/* <p>{`Playing: ${playing}`}</p>
       <p>{`Video time: ${videoTime}`}</p> */}
+      <div style={{ width: `${progress}%` }} className="progress-bar"></div>
     </div>
   );
 };

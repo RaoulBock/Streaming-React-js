@@ -19,7 +19,7 @@ export const HomeScreen = () => {
         />
         <VideoCard />
         <Jumbotron
-          title={"VIDEO OF THE DAY"}
+          title={"SONG OF THE DAY"}
           description={"We Don't Talk Anymore Feat. Selena Gomez"}
           text={
             "Chalie Puth - We Don't Talk Anymore feat. Selena Gomez Official Video"

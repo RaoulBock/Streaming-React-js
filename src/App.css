@@ -300,3 +300,16 @@ h2.card_header {
 .section_one_information {
   margin-bottom: 50px;
 }
+.progress-bar {
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar::before {
+  content: "";
+  display: block;
+  height: 100%;
+  background-color: #4caf50;
+}
