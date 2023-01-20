@@ -10,23 +10,21 @@ export const HomeScreen = () => {
   return (
     <div className="container">
       <Nav />
-      <div className="gradient"></div>
-      {/* <img
-        src={illustration}
-        alt={"illustration"}
-        className={"illustration_image"}
-      /> */}
-      <VideoCard />
-      <Jumbotron
-        title={"VIDEO OF THE DAY"}
-        description={"We Don't Talk Anymore Feat. Selena Gomez"}
-        text={
-          "Chalie Puth - We Don't Talk Anymore feat. Selena Gomez Official Video"
-        }
-      />
+      <div className="container_header">
+        <div className="gradient"></div>
+        <VideoCard />
+        <Jumbotron
+          title={"VIDEO OF THE DAY"}
+          description={"We Don't Talk Anymore Feat. Selena Gomez"}
+          text={
+            "Chalie Puth - We Don't Talk Anymore feat. Selena Gomez Official Video"
+          }
+        />
+      </div>
       <div className="section_one">
         <div className="section_one_information">
           <h2 className="card_header">{"Discover"}</h2>
+
           <div className="section_one_grid">
             {DISCOVER.map((e, i) => {
               return <Card key={i} item={e} header={"Discover"} />;

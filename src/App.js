@@ -26,7 +26,7 @@ const NavWrapper = () => {
   return (
     <>
       <div className="main_container">
-        <SideNav />
+        {/* <SideNav /> */}
 
         <div className="screen_container">
           {navPage === APP_PAGES.APP.HOME && <HomeScreen />}
