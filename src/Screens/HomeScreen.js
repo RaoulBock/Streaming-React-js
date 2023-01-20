@@ -8,6 +8,7 @@ import { Nav } from "../Components/Nav/Nav";
 import { AppContext } from "../context/AppContext";
 import { APP_ICONS, DISCOVER, TRENDING } from "../context/settings";
 import illustration from "../Images/anshita-nair-0rxLLHD1XxA-unsplash.jpg";
+import song from "../Components/Video/Do_Better_(getmp3.pro).mp3";
 
 export const HomeScreen = () => {
   const { currentSongPlaying } = React.useContext(AppContext);
@@ -22,7 +23,7 @@ export const HomeScreen = () => {
           alt={"illustration"}
           className={"illustration_image"}
         />
-        <VideoCard />
+        <VideoCard videosrc={song} />
         <Jumbotron
           title={"SONG OF THE DAY"}
           description={"We Don't Talk Anymore Feat. Selena Gomez"}

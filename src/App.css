@@ -446,12 +446,15 @@ h2.card_header {
 @keyframes jump {
   0% {
     transform: translateY(0);
+    background: #10ac84;
   }
   50% {
     transform: translateY(-5px);
+    background: #10ac84;
   }
   100% {
     transform: translateY(0);
+    background: #10ac84;
   }
 }
 

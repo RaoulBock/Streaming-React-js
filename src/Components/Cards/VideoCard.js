@@ -5,7 +5,7 @@ import forward from "../../Images/forward-5.svg";
 import videoPlayMe from "../Video/Do_Better_(getmp3.pro).mp3";
 import { APP_ICONS } from "../../context/settings";
 
-export const VideoCard = () => {
+export const VideoCard = ({ videosrc }) => {
   const [currentTime, setCurrentTime] = React.useState(0);
 
   const [progress, setProgress] = React.useState(0);
@@ -52,7 +52,7 @@ export const VideoCard = () => {
     <div className="video_card_container">
       <audio ref={videoRef} id="video1" className="video_player_container">
         {/* Add your video source here */}
-        <source src={videoPlayMe} type={"audio/mp3"} />
+        <source src={videosrc} type={"audio/mp3"} />
       </audio>
       {/* <button onClick={() => videoHandler("play")}>Play</button> */}
       {playing ? (

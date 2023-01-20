@@ -43,6 +43,7 @@ export const DISCOVER = [
     views: "1,854,691,298",
     img: "https://www.creativeboom.com/uploads/articles/db/db1a6b372e7c23636f9b8d88f879a9a815c6825c_810.jpeg",
     time_length: "2:45",
+    song: "../Components/Video/Do_Better_(getmp3.pro).mp3",
   },
   {
     id: 2,
@@ -50,6 +51,7 @@ export const DISCOVER = [
     views: "681,298",
     img: "https://assets.capitalxtra.com/2013/48/best-hip-hop-album-covers-9-1386002950-view-0.jpg",
     time_length: "4:21",
+    song: "../Components/Video/Do_Better_(getmp3.pro).mp3",
   },
   {
     id: 3,
@@ -57,6 +59,7 @@ export const DISCOVER = [
     views: "1,584,243,222",
     img: "https://www.graphicdesignforum.com/uploads/default/original/2X/d/d3c4e744046205a49d06beb874df3b39da7c9c73.jpeg",
     time_length: "2:30",
+    song: "../Components/Video/Do_Better_(getmp3.pro).mp3",
   },
   {
     id: 4,
@@ -64,6 +67,7 @@ export const DISCOVER = [
     views: "728,883",
     img: "https://images.squarespace-cdn.com/content/v1/53b6eb62e4b06e0feb2d8e86/1607362705516-R5Q22H4FVIVPNMW8OWD7/SamSpratt_KidCudi_ManOnTheMoon3_AlbumCover_Web.jpg",
     time_length: "5:21",
+    song: "../Components/Video/Do_Better_(getmp3.pro).mp3",
   },
   {
     id: 5,
@@ -71,6 +75,7 @@ export const DISCOVER = [
     views: "723,221",
     img: "https://images.nightcafe.studio/jobs/nrOcbGDvjDgIZPO7rbA6/nrOcbGDvjDgIZPO7rbA6.jpg",
     time_length: "2:00",
+    song: "../Components/Video/Do_Better_(getmp3.pro).mp3",
   },
 ];
 
