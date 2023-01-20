@@ -11,10 +11,12 @@ export const Nav = () => {
 
   return (
     <div className="nav_container">
-      <h4 className="nav_menu" onClick={() => setShowMenu(!showMenu)}>
-        {APP_ICONS.MENU}
-      </h4>
-      <SearchInput placeholder={"Search here ..."} />
+      <div className="nav_grid">
+        <h4 className="nav_menu" onClick={() => setShowMenu(!showMenu)}>
+          {APP_ICONS.MENU}
+        </h4>
+        <SearchInput placeholder={"Search here ..."} />
+      </div>
 
       <div className="nav_container_grid">
         <Button

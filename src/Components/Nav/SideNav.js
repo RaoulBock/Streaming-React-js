@@ -5,7 +5,7 @@ import logo from "../../Images/Nuxous-removebg-preview.png";
 import { MenuList } from "../List/MenuList";
 
 export const SideNav = () => {
-  const { setSideTab } = React.useContext(AppContext);
+  const { setSideTab, setShowMenu } = React.useContext(AppContext);
 
   const side_menu = [
     {
@@ -71,22 +71,25 @@ export const SideNav = () => {
   ];
 
   return (
-    <div className="sidenav_outline">
-      <img src={logo} alt={logo} className={"logo"} />
+    <>
+      <div onClick={() => setShowMenu(false)} className="overlay"></div>
+      <div className="sidenav_outline">
+        <img src={logo} alt={logo} className={"logo"} />
 
-      <div className="side-menu-container">
-        {side_menu.map((e, i) => {
-          return <MenuList item={e} key={i} />;
-        })}
-        <h3 className="menu_list_title">Your Videos</h3>
-        {side_menu_option_one.map((e, i) => {
-          return <MenuList item={e} key={i} />;
-        })}
-        <h3 className="menu_list_title">My Playlist</h3>
-        {side_menu_option_two.map((e, i) => {
-          return <MenuList item={e} key={i} />;
-        })}
+        <div className="side-menu-container">
+          {side_menu.map((e, i) => {
+            return <MenuList item={e} key={i} />;
+          })}
+          <h3 className="menu_list_title">Your Videos</h3>
+          {side_menu_option_one.map((e, i) => {
+            return <MenuList item={e} key={i} />;
+          })}
+          <h3 className="menu_list_title">My Playlist</h3>
+          {side_menu_option_two.map((e, i) => {
+            return <MenuList item={e} key={i} />;
+          })}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
