@@ -225,15 +225,14 @@
   width: 100%;
 }
 .play_btn {
-  /* background: red; */
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-    cursor: pointer;
-    font-size: 58px;
-    color: white;
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  cursor: pointer;
+  font-size: 58px;
+  color: white;
 }
 .card_outline_image {
   width: 200px;
@@ -278,15 +277,17 @@ h2.card_header {
 }
 .card_time_length {
   position: relative;
-  top: 19px;
+  top: 25px;
+  left: -3px;
   float: right;
   /* margin-left: 11px; */
   background: white;
-  padding: 6px 6px;
-  border-bottom-left-radius: 7px;
+  padding: 2px 5px;
+  /* border-bottom-left-radius: 7px; */
   font-weight: 500;
   /* color: red; */
- 
+  border-radius: 8px;
+
 }
 .card_views {
   margin-top: 13px;
@@ -295,4 +296,7 @@ h2.card_header {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+}
+.section_one_information {
+  margin-bottom: 50px;
 }
