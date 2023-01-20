@@ -466,7 +466,7 @@ h2.card_header {
 .side_nav_grid {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+
 }
 .menu_list_icon {
   color: #fff;
@@ -476,4 +476,11 @@ h2.card_header {
   border-radius: 10px;
   display: flex;
   cursor: pointer;
+}
+h4.current_song_card_icon {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  font-size: 51px;
+  color: white;
 }
