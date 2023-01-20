@@ -409,3 +409,11 @@ h2.card_header {
   text-transform: uppercase;
   text-align: right;
 }
+.is_playing_icon {
+  position: relative;
+  top: -100px;
+  left: 157px;
+  font-size: 88px;
+  color: white;
+  transform: translate(-50%, -50%);
+}
