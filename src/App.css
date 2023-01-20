@@ -35,7 +35,7 @@
 .logo {
   width: 100%;
   position: absolute;
-  top: -13%;
+  top: -123px;
 }
 .menulist_outline, .menulist_active {
   display: flex;
@@ -462,4 +462,18 @@ h2.card_header {
   display: flex;
   align-items: center;
   float: right;
+}
+.side_nav_grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu_list_icon {
+  color: #fff;
+  margin-right: 10px;
+  background-color: #ff3465;
+  padding: 6px;
+  border-radius: 10px;
+  display: flex;
+  cursor: pointer;
 }

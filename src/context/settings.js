@@ -12,6 +12,7 @@ import {
   BiPause,
   BiListUl,
   BiMenuAltLeft,
+  BiPlus,
 } from "react-icons/bi";
 
 export const APP_ICONS = {
@@ -28,6 +29,7 @@ export const APP_ICONS = {
   PAUSE: <BiPause />,
   PLAYLIST: <BiListUl />,
   MENU: <BiMenuAltLeft />,
+  PLUS: <BiPlus />,
 };
 
 export const APP_PAGES = {

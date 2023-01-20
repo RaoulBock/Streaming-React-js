@@ -84,7 +84,10 @@ export const SideNav = () => {
           {side_menu_option_one.map((e, i) => {
             return <MenuList item={e} key={i} />;
           })}
-          <h3 className="menu_list_title">My Playlist</h3>
+          <div className="side_nav_grid">
+            <h3 className="menu_list_title">My Playlist</h3>
+            <h3 className="menu_list_icon">{APP_ICONS.PLUS}</h3>
+          </div>
           {side_menu_option_two.map((e, i) => {
             return <MenuList item={e} key={i} />;
           })}
