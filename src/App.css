@@ -248,7 +248,6 @@
   padding: 0px 20px;
 }
 .card_outline {
-
   width: 200px;
   cursor: pointer;
 }
@@ -291,4 +290,9 @@ h2.card_header {
 }
 .card_views {
   margin-top: 13px;
+}
+.section_one_grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }

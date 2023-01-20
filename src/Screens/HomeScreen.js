@@ -26,9 +26,11 @@ export const HomeScreen = () => {
       />
       <div className="section_one">
         <h2 className="card_header">{"Discover"}</h2>
-        {DISCOVER.map((e, i) => {
-          return <Card key={i} item={e} header={"Discover"} />;
-        })}
+        <div className="section_one_grid">
+          {DISCOVER.map((e, i) => {
+            return <Card key={i} item={e} header={"Discover"} />;
+          })}
+        </div>
       </div>
     </div>
   );
