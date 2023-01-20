@@ -11,6 +11,7 @@ import {
   BiPlay,
   BiPause,
   BiListUl,
+  BiMenuAltLeft,
 } from "react-icons/bi";
 
 export const APP_ICONS = {
@@ -26,6 +27,7 @@ export const APP_ICONS = {
   PLAY: <BiPlay />,
   PAUSE: <BiPause />,
   PLAYLIST: <BiListUl />,
+  MENU: <BiMenuAltLeft />,
 };
 
 export const APP_PAGES = {

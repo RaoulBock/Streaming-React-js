@@ -14,7 +14,8 @@ function App() {
 }
 
 const NavWrapper = () => {
-  const { navPage, setNavPage } = React.useContext(AppContext);
+  const { navPage, setNavPage, showMenu, setShowMenu } =
+    React.useContext(AppContext);
   const onSetNavPage = (e) => {
     setNavPage(e);
   };
@@ -26,7 +27,7 @@ const NavWrapper = () => {
   return (
     <>
       <div className="main_container">
-        {/* <SideNav /> */}
+        {showMenu && <SideNav />}
 
         <div className="screen_container">
           {navPage === APP_PAGES.APP.HOME && <HomeScreen />}

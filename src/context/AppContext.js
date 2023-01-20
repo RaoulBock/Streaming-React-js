@@ -9,6 +9,7 @@ export const AppContext = React.createContext({
 const AppProvider = ({ children }) => {
   const [navPage, setNavPage] = React.useState(APP_PAGES.APP.HOME);
   const [sideTab, setSideTab] = React.useState(0);
+  const [showMenu, setShowMenu] = React.useState(false);
 
   return (
     <AppContext.Provider
@@ -17,6 +18,8 @@ const AppProvider = ({ children }) => {
         setNavPage,
         sideTab,
         setSideTab,
+        showMenu,
+        setShowMenu,
       }}
     >
       {children}

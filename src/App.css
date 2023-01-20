@@ -13,6 +13,17 @@
   height: 100%;
   background-color: #1a1936;
   position: fixed;
+  z-index: 999;
+  animation-name: showMenu;
+  animation-duration: 1s;
+}
+@keyframes showMenu {
+  from {
+    width: 0%;
+  }
+  top {
+    width: 15%;
+  }
 }
 /* .screen_container {
   width: 85%;
@@ -337,4 +348,10 @@ h2.card_header {
   height: 100%;
   background-color: #1a1936;
   border-radius: 10px;
+}
+.nav_menu {
+  color: white;
+  font-weight: 500;
+  font-size: 25px;
+  cursor: pointer;
 }
