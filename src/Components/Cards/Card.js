@@ -5,10 +5,10 @@ export const Card = ({ item, header }) => {
     <>
       <h2 className="card_header">{header}</h2>
       <div className="card_outline">
-        <h4>{item.time_length}</h4>
+        <h4 className="card_time_length">{item.time_length}</h4>
         <img src={item.img} alt={item.name} className={"card_outline_image"} />
         <h4>{item.title}</h4>
-        <h4>{item.views}</h4>
+        <h4 className="card_views">{item.views} views</h4>
       </div>
     </>
   );

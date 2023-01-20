@@ -248,8 +248,11 @@
   padding: 0px 20px;
 }
 .card_outline {
-  margin-top: 25px;
+
+  width: 200px;
+  cursor: pointer;
 }
+
 h2.card_header {
   font-size: 32px;
   font-weight: 500;
@@ -265,4 +268,27 @@ h2.card_header {
   display: flex;
   align-items: center;
   
+}
+.card_outline h4 {
+  font-weight: 500;
+  color: #1a1936;
+  font-size: 13px;
+}
+.card_time_length {
+  position: relative;
+}
+.card_time_length {
+  position: relative;
+  top: 19px;
+  float: right;
+  /* margin-left: 11px; */
+  background: white;
+  padding: 6px 6px;
+  border-bottom-left-radius: 7px;
+  font-weight: 500;
+  /* color: red; */
+ 
+}
+.card_views {
+  margin-top: 13px;
 }

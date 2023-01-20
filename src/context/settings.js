@@ -36,7 +36,8 @@ export const DISCOVER = [
   {
     id: 1,
     title: "Shawn Mednes - Treats You Better",
-    views: "1854691298",
+    views: "1,854,691,298",
     img: "https://www.creativeboom.com/uploads/articles/db/db1a6b372e7c23636f9b8d88f879a9a815c6825c_810.jpeg",
+    time_length: "2:45",
   },
 ];
