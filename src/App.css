@@ -302,14 +302,14 @@ h2.card_header {
 }
 .progress-bar {
   height: 10px;
-  background-color: #ddd;
-  border-radius: 5px;
+  background-color: rgb(126, 28, 28);
   overflow: hidden;
+
 }
 
 .progress-bar::before {
   content: "";
   display: block;
   height: 100%;
-  background-color: #4caf50;
+  background-color: #1a1936;
 }

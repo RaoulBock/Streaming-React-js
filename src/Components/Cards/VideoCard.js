@@ -20,7 +20,7 @@ export const VideoCard = () => {
       setProgress((videoRef.current?.currentTime / videoTime) * 100);
     }, 1000);
     return () => clearInterval(intervalId);
-  }, []);
+  }, [videoTime]);
 
   const videoHandler = (control) => {
     if (control === "play") {
@@ -58,7 +58,7 @@ export const VideoCard = () => {
     setProgress((videoRef.current?.currentTime / videoTime) * 100);
   }, 1000);
 
-  if (videoTime > videoTime.length) {
+  if (progress.length === "100%") {
     setPlaying(false);
   }
 
