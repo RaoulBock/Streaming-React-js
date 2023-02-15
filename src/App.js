@@ -1,9 +1,10 @@
 import React from "react";
 import "./App.css";
-import { SideNav } from "./Components/Nav/SideNav";
 import AppProvider, { AppContext } from "./context/AppContext";
 import { APP_PAGES } from "./context/settings";
 import { HomeScreen } from "./Screens/HomeScreen";
+import { LoginScreen } from "./Screens/LoginScreen";
+import { RegisterScreen } from "./Screens/RegisterScreen";
 
 function App() {
   return (
@@ -14,8 +15,7 @@ function App() {
 }
 
 const NavWrapper = () => {
-  const { navPage, setNavPage, showMenu, setShowMenu } =
-    React.useContext(AppContext);
+  const { navPage, setNavPage, userAccountReg } = React.useContext(AppContext);
   const onSetNavPage = (e) => {
     setNavPage(e);
   };
@@ -26,13 +26,16 @@ const NavWrapper = () => {
 
   return (
     <>
-      <div className="main_container">
-        {showMenu && <SideNav />}
+      {/* {userData.length > 0 && navPage === APP_PAGES.APP.HOME ? (
+        <HomeScreen />
+      ) : (
+        <LoginScreen />
+      )} */}
 
-        <div className="screen_container">
-          {navPage === APP_PAGES.APP.HOME && <HomeScreen />}
-        </div>
-      </div>
+      {navPage === APP_PAGES.APP.HOME && <HomeScreen />}
+      {navPage === APP_PAGES.APP.LOGIN && <LoginScreen />}
+
+      {navPage === APP_PAGES.APP.REGISTER && <RegisterScreen />}
     </>
   );
 };
